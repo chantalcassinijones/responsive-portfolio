@@ -1,0 +1,65 @@
+/* General Styling */
+
+* {
+  box-sizing: border-box;
+  background-color: #EBEBF2;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+  line-height: 1.5;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+ 
+p {
+  margin: 0;
+}
+/* Navigation Styling */
+
+h1 {
+  display: flex;
+  background-color: #9CD9D9;
+  color: #353840;
+  font-size: 32px;
+  padding-left: 2rem;
+  padding-right: 1rem;
+  
+}
+
+.nav-bar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px;
+  height: 4rem;
+  background-color:#353840;
+  
+}
+ 
+ .navigation {
+  display: flex;
+  padding-right: 2rem;
+  background-color: #353840;
+
+ } 
+
+a {
+  padding: 4px;
+  margin-top: 0.5rem;
+  font-size: 14px;
+  color: #9CD9D9;
+  background-color: #353840;
+
+}
+
