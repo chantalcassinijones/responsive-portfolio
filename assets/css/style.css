@@ -20,18 +20,24 @@ h5,
 h6 {
   margin: 0;
 }
- 
+
+/* CSS variables */
+
+:root {
+  --light:#9CD9D9;
+  --dark:#25204C;
+}
+
 
 /* Navigation Styling */
 
 h1 {
-  display: flex;
-  background-color: #9CD9D9;
-  color:black;
-  font-size: 32px;
-  padding-left: 2rem;
-  padding-right: 1rem;
-  
+ display: flex;
+ background-color:var(--light);
+ color: var(--dark);
+ font-size: 32px;
+ padding-left: 2rem;
+ padding-right: 1rem;
 }
 
 .nav-bar {
@@ -41,26 +47,26 @@ h1 {
   justify-content: space-between;
   margin: 0px;
   height: 4rem;
-  background-color:#353840;
-  
+  background-color: var(--dark);
+
 }
- 
- .navigation {
+
+.navigation {
   display: flex;
   padding-right: 2rem;
-  background-color: #353840;
+  background-color:var(--dark);
 
- } 
+}
 
 .navigation a {
   padding: 4px;
   margin-top: 0.5rem;
   font-size: 14px;
-  color: #9CD9D9;
-  background-color: #353840;
+  color:var(--light);
+  background-color:var(--dark);
   text-decoration: none;
   margin: 3px;
-  border-bottom: 2px solid #9CD9D9;
+  border-bottom: 2px solid var(--light);
 
 }
 
@@ -68,8 +74,8 @@ h1 {
 
 .hero-banner h2 {
 
-  background-color: #9CD9D9;
-  
+  background-color: var(--light);
+
 }
 
 .hero-banner {
@@ -78,10 +84,13 @@ h1 {
   justify-content: flex-end;
   align-items: flex-end;
   height: 6rem;
-  padding: 15px 60px ;
+  padding: 15px 60px;
   background-image: url(../images/02-hero-bg.jpg);
   background-size: 105%;
-  background-repeat:no-repeat;
+  background-repeat: no-repeat;
+}
+.subtitle h2 {
+  color: var(--dark);
 }
 
 /* main section styling */
@@ -93,18 +102,31 @@ h1 {
   width: 100%;
 }
 
-#about {
-  display: flex;
-  width: 100%;
-}
-
 #title {
+  color:var(--dark);
   font-size: 40px;
   text-align: right;
-  border-right: 2px solid #353840;
+  border-right: 2px solid var(--dark);
   margin: 15px;
   padding: 10px;
   width: 200px;
+}
+.about-me-title {
+  color:var(--dark);
+  font-size: 40px;
+  text-align: right;
+  border-right: 2px solid var(--dark);
+  margin: 15px;
+  padding: 10px;
+  width: 205px;
+
+}
+
+/* about me */
+
+#about {
+  display: flex;
+  width: 100%;
 }
 
 p {
@@ -113,22 +135,24 @@ p {
   padding: 2px;
 }
 
+/* portfolio container */
+
 #work {
   display: flex;
   width: 100%;
 }
 
 .portfolio-grid {
-width: 80%;
-margin-left: 15px;
-display: grid;
-grid-template-rows: 150px 150px 150px 150px;
-grid-template-columns: 3fr 3fr;
-grid-template-areas: 
-"surf-report surf-report"
-"surf-report surf-report"
-"led-wall calculator"
-"pastel-puzzles run-buddy"
+  width: 80%;
+  margin-left: 15px;
+  display: grid;
+  grid-template-rows: 150px 150px 150px 150px;
+  grid-template-columns: 3fr 3fr;
+  grid-template-areas:
+    "surf-report surf-report"
+    "surf-report surf-report"
+    "led-wall calculator"
+    "pastel-puzzles run-buddy"
 }
 
 .portfolio-grid-area {
@@ -139,23 +163,16 @@ grid-template-areas:
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: 3px solid #9CD9D9;
- 
+  border: 3px solid var(--light);
+
 }
 
 .heading {
-  background-color:#9CD9D9;
-    padding: 20px;
-    height: 30px;
-    width: 100px;
-    color: black;
-    font-size: 16px;
-   margin-bottom: 10px;
-   margin-right: 50px;
-   
-   
- 
-   
+  background-color: var(--light);
+  font-size: 16px;
+  position: relative;
+  margin-bottom: 10px;
+  margin-right: 85%;
 }
 
 #surf-report {
@@ -163,9 +180,17 @@ grid-template-areas:
   background-image: url(../images/02-portfolio-4.jpg);
 }
 
+#surf-report:hover {
+  opacity: 0.6;
+
+}
 #led-wall {
   grid-area: led-wall;
   background-image: url(../images/02-portfolio-1.jpg);
+}
+
+#led-wall:hover {
+  opacity: 0.6;
 }
 
 #calculator {
@@ -173,9 +198,16 @@ grid-template-areas:
   background-image: url(../images/02-portfolio-2.jpg);
 }
 
+#calculator:hover {
+  opacity: 0.6;
+}
+
 #pastel-puzzles {
   grid-area: pastel-puzzles;
   background-image: url(../images/02-portfolio-3.jpg);
+}
+#pastel-puzzles:hover {
+  opacity: 0.6;
 }
 
 #run-buddy {
@@ -183,21 +215,36 @@ grid-template-areas:
   background-image: url(../images/02-run-buddy.jpg);
 }
 
+#run-buddy:hover {
+  opacity: 0.6;
+}
+
+/* contact */
+
 #contact {
   display: flex;
 
 }
 
 #link a {
-font-size: 14px;
-text-decoration: none;
-padding: 5px;
-margin: 60px;
-border-bottom: 2px solid navy;
+  font-size: 14px;
+  text-decoration: none;
+  padding: 5px;
+  margin: 60px;
+  border-bottom: 2px solid var(--dark);
 
 }
 
 #link {
   padding: 70px 40px;
+}
+
+   
+
+
+
+/* Small devices ( phones, 600px ) */
+@media only screen and (max-width: 600px) {
+
 }
 
