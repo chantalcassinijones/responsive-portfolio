@@ -22,10 +22,10 @@ The section showcasing my projects is under construction and eventually will hav
 
 
 md
-    ![Screenshot 1](./assets/images/screenshot1.png)
+    ![Screenshot 1](./assets/images/Screenshot%202023-11-07%20184344.png)
 
  md   
-    ![Screenshot 2](./assets/images/screenshot2.png)
+    ![Screenshot 2](./assets/images/Screenshot%202023-11-07%20184418.png)
     
 
 
