@@ -18,7 +18,7 @@ N/A
 ## Usage
 
 This is a simple portfolio webpage. All you need to do is open the webpage with your browser. The navigation bar has clickable links that take you to each of the main sections of the page.
-The section showcasing my projects is under construction and eventually will have clickable images which will link to the live projects. The contact me section, currently links to my GitHub account.  
+The section showcasing my projects is under construction and eventually will have clickable images which will link to the live projects for now they are linking to the same. The contact me section, currently links to my GitHub account, twitter and spotify, with place holders for phone number and email.  
 
 
 md
