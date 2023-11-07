@@ -22,13 +22,12 @@ The section showcasing my projects is under construction and eventually will hav
 
 
 md
-    ![Screenshot 1]()
+    ![Screenshot 1](./assets/images/screenshot1.png)
 
  md   
-    ![Screenshot 2]()
+    ![Screenshot 2](./assets/images/screenshot2.png)
     
-md
-    ![Screenshot 3]()
+
 
 
     
@@ -42,4 +41,5 @@ I read the following articles to help me complete this challenge:
 [Commit Message Guidelines](https://www.freecodecamp.org/news/writing-good-commit-messages-a-practical-guide/)
 [Html border-bottom](https://www.w3schools.com/cssref/pr_border-bottom.php)
 [Html links](https://www.w3schools.com/html/html_links.asp)
+[:hover](https://www.w3schools.com/html/html_links.asp)
 
