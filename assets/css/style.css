@@ -164,6 +164,7 @@ p {
   display: grid;
   align-content: end;
   border: 3px solid var(--light);
+  text-decoration: none;
 
 }
 
@@ -243,8 +244,58 @@ p {
 
 
 
-/* Small devices ( phones, 600px ) */
-@media only screen and (max-width: 600px) {
+/* Small devices ( phones, 760px ) */
+@media only screen and (max-width: 760px) {
 
+  .nav-bar {
+  flex-direction: column;
+  height:none;
+}
+  .hero-banner {justify-content: center;}
+  #about { flex-direction: column;}
+  .about-me-title {
+    padding: none;
+    color:var(--dark);
+    font-size: 25px;
+    border-bottom: 2px solid var(--dark);
+    border-right: none;
+    text-align: start;
+    width: 350px;
+    }
+    #work { flex-direction: column;}
+    #title { 
+    border-bottom: 2px solid var(--dark);
+    border-right: none;
+    font-size: 25px; 
+    text-align: start;
+    width: 350px;} 
+  #contact { flex-direction: column;}
+  .portfolio-grid {
+    width: 100%;
+    margin-left: 15px;
+    display: grid;
+    grid-template-rows: 150px 150px 150px 150px 150px;
+    grid-template-columns: 3fr;
+    grid-template-areas:
+      "surf-report"
+      "led-wall"
+      "calculator"
+      "pastel-puzzles" 
+      "run-buddy"
+  }
+  #link {
+       padding: none;
+        display: flex;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        align-items: flex-start;
+  }
+
+  * {
+    box-sizing: unset;
+  }
+  h1 {
+    padding-left: 3rem;
+  padding-right: 2rem;
 }
 
