@@ -42,4 +42,5 @@ I read the following articles to help me complete this challenge:
 [Html border-bottom](https://www.w3schools.com/cssref/pr_border-bottom.php)
 [Html links](https://www.w3schools.com/html/html_links.asp)
 [:hover](https://www.w3schools.com/html/html_links.asp)
-
+[round picture](https://www.w3schools.com/html/html_links.asp)
+[gradient background](https://cssgradient.io/)
