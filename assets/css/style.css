@@ -2,7 +2,7 @@
 
 * {
   box-sizing: border-box;
-  background-color: #EBEBF2;
+  background-color: #CACFD6;
 }
 
 body {
@@ -24,20 +24,21 @@ h6 {
 /* CSS variables */
 
 :root {
-  --light:#9CD9D9;
-  --dark:#25204C;
+  --light: #DCD6F7;
+  --dark: #424874;
+  --bright: #ff3e88;
 }
 
 
 /* Navigation Styling */
 
 h1 {
- display: flex;
- background-color:var(--light);
- color: var(--dark);
- font-size: 32px;
- padding-left: 2rem;
- padding-right: 1rem;
+  display: flex;
+  background-color: var(--light);
+  color: var(--dark);
+  font-size: 32px;
+  padding-left: 2rem;
+  padding-right: 1rem;
 }
 
 .nav-bar {
@@ -54,7 +55,7 @@ h1 {
 .navigation {
   display: flex;
   padding-right: 2rem;
-  background-color:var(--dark);
+  background-color: var(--dark);
 
 }
 
@@ -62,11 +63,11 @@ h1 {
   padding: 4px;
   margin-top: 0.5rem;
   font-size: 14px;
-  color:var(--light);
-  background-color:var(--dark);
+  color: var(--bright);
+  background-color: var(--dark);
   text-decoration: none;
   margin: 3px;
-  border-bottom: 2px solid var(--light);
+  border-bottom: 2px solid var(--bright);
 
 }
 
@@ -85,10 +86,16 @@ h1 {
   align-items: flex-end;
   height: 6rem;
   padding: 15px 60px;
-  background-image: url(../images/02-hero-bg.jpg);
+  background: rgb(53, 56, 64);
+  background: linear-gradient(90deg, rgba(53, 56, 64, 1) 0%, rgba(255, 62, 136, 1) 35%, rgba(156, 217, 217, 1) 100%);
   background-size: 105%;
   background-repeat: no-repeat;
 }
+.hero-floating-picture {
+  border-radius: 50%;
+  
+}
+
 .subtitle h2 {
   color: var(--dark);
 }
@@ -102,8 +109,8 @@ h1 {
   width: 100%;
 }
 
-#title {
-  color:var(--dark);
+.page-section h2 {
+  color: var(--dark);
   font-size: 40px;
   text-align: right;
   border-right: 2px solid var(--dark);
@@ -111,8 +118,9 @@ h1 {
   padding: 10px;
   width: 200px;
 }
+
 .about-me-title {
-  color:var(--dark);
+  color: var(--dark);
   font-size: 40px;
   text-align: right;
   border-right: 2px solid var(--dark);
@@ -163,7 +171,7 @@ p {
   cursor: pointer;
   display: grid;
   align-content: end;
-  border: 3px solid var(--light);
+  border: 3px solid var(--bright);
   text-decoration: none;
 
 }
@@ -185,6 +193,7 @@ p {
   opacity: 0.6;
 
 }
+
 #led-wall {
   grid-area: led-wall;
   background-image: url(../images/02-portfolio-1.jpg);
@@ -207,6 +216,7 @@ p {
   grid-area: pastel-puzzles;
   background-image: url(../images/02-portfolio-3.jpg);
 }
+
 #pastel-puzzles:hover {
   opacity: 0.6;
 }
@@ -224,6 +234,7 @@ p {
 
 #contact {
   display: flex;
+  width: 100%;
 
 }
 
@@ -232,7 +243,7 @@ p {
   text-decoration: none;
   padding: 5px;
   margin: 60px;
-  border-bottom: 2px solid var(--dark);
+  border-bottom: 2px solid var(--bright);
 
 }
 
@@ -240,36 +251,56 @@ p {
   padding: 70px 40px;
 }
 
-   
 
 
 
-/* Small devices ( phones, 760px ) */
-@media only screen and (max-width: 760px) {
+
+/* Small devices ( phones, 600px ) */
+@media only screen and (max-width: 600px) {
 
   .nav-bar {
-  flex-direction: column;
-  height:none;
-}
-  .hero-banner {justify-content: center;}
-  #about { flex-direction: column;}
+    flex-direction: column;
+    height: none;
+  }
+
+  .hero-banner {
+    justify-content: center;
+  }
+
+  .page-wrapper {
+    width: 90%;
+  }
+
+  #about {
+    flex-direction: column;
+  }
+
   .about-me-title {
     padding: none;
-    color:var(--dark);
+    color: var(--dark);
     font-size: 25px;
     border-bottom: 2px solid var(--dark);
     border-right: none;
     text-align: start;
     width: 350px;
-    }
-    #work { flex-direction: column;}
-    #title { 
+  }
+
+  #work {
+    flex-direction: column;
+  }
+
+  .page-section h2 {
     border-bottom: 2px solid var(--dark);
     border-right: none;
-    font-size: 25px; 
+    font-size: 25px;
     text-align: start;
-    width: 350px;} 
-  #contact { flex-direction: column;}
+    width: 350px;
+  }
+
+  #contact {
+    flex-direction: column;
+  }
+
   .portfolio-grid {
     width: 100%;
     margin-left: 15px;
@@ -280,22 +311,26 @@ p {
       "surf-report"
       "led-wall"
       "calculator"
-      "pastel-puzzles" 
+      "pastel-puzzles"
       "run-buddy"
   }
+
   #link {
-       padding: none;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        align-items: flex-start;
+    padding: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
   }
 
   * {
     box-sizing: unset;
   }
+
   h1 {
     padding-left: 3rem;
-  padding-right: 2rem;
-}
+    width: 90%;
+  }
+  
 
+}
